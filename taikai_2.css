@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /* --- 共通 --- */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
@@ -37,7 +38,10 @@ section {
   border-bottom: 1px solid #e5e5e5;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
   margin: 0 0 20px;
 }
@@ -65,8 +69,10 @@ h4 {
 
 .bu {
   display: block;
-  width: fit-content;       /* 内容に合わせる */
-  margin: 32px auto;        /* 自動で左右中央寄せ */
+  width: fit-content;
+  /* 内容に合わせる */
+  margin: 32px auto;
+  /* 自動で左右中央寄せ */
   text-align: center;
   font-size: 75px;
   font-weight: 600;
@@ -132,7 +138,8 @@ h4 {
 
 /* --- コンテンツとの重なり対策 --- */
 body {
-  padding-top: 80px; /* ナビバー分の余白を上にとる */
+  padding-top: 80px;
+  /* ナビバー分の余白を上にとる */
 }
 
 /* --- メニュー（初期非表示） --- */
@@ -161,6 +168,7 @@ body {
   color: #222;
   font-weight: 600;
 }
+
 /* --- 固定ナビゲーションバー --- */
 .navbar {
   position: fixed;
@@ -169,12 +177,13 @@ body {
   width: 100%;
   height: 70px;
   background-color: #ffffff;
-  border-bottom: 2px solid #ffffff; /* 白枠 */
+  border-bottom: 2px solid #ffffff;
+  /* 白枠 */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -200,7 +209,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  border: 2px solid #ffffff; /* 白枠 */
+  border: 2px solid #ffffff;
+  /* 白枠 */
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -216,7 +226,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.title{
+.title {
   font-size: 64px;
   color: #ff3d3d;
   font-weight: bold;
@@ -232,35 +242,38 @@ body {
 }
 
 .rinnku {
-  display: block;          /* これ重要！ */
-  width: fit-content;      /* テキストに合わせる */
-  margin: 0 auto;          /* 中央寄せ */
+  display: block;
+  /* これ重要！ */
+  width: fit-content;
+  /* テキストに合わせる */
+  margin: 0 auto;
+  /* 中央寄せ */
   font-size: 64px;
   text-align: center;
   color: red;
 }
 
 
-.komi{
+.komi {
   font-size: 40px;
   text-align: center;
   color: #ff3d3d;
 }
 
-.kako{
+.kako {
   text-align: center;
   font-size: 48px;
 }
 
 .fade {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 3s, transform 3s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s, transform 3s;
 }
 
 .fade.active {
-    opacity: 1;
-    transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .confetti {
@@ -273,48 +286,54 @@ body {
   overflow: hidden;
 }
 
-.fami::before{
+.fami::before {
   content: "Q" counter(q-counter);
   counter-increment: q-counter;
   color: red;
   padding-right: 8px;
 }
 
-.right{
-list-style-position: inside; /* ●を文字の内側に */
-  text-align: left;           /* 各行を右揃え */
+.right {
+  list-style-position: inside;
+  /* ●を文字の内側に */
+  text-align: left;
+  /* 各行を右揃え */
   padding: 0;
   margin: 0;
 }
 
-.sright{
- list-style-position: inside; /* ●を文字の内側に */
-  text-align: left;           /* 各行を右揃え */
+.sright {
+  list-style-position: inside;
+  /* ●を文字の内側に */
+  text-align: left;
+  /* 各行を右揃え */
   padding: 0;
   margin: 0;
   font-size: 48px;
 }
 
-.dive{
+.dive {
   display: flex;
   justify-content: center;
 }
 
-.honbu{
+.honbu {
   font-size: 42px;
   text-align: center;
 }
 
-iframe{
+iframe {
   display: flex;
   margin: auto;
 }
 
 .guest-card {
   display: flex;
-  background: #000;       /* 黒背景 */
+  background: #000;
+  /* 黒背景 */
   padding: 40px;
-  border-left: 10px solid #005eff;   /* アクセントカラー */
+  border-left: 10px solid #005eff;
+  /* アクセントカラー */
   align-items: center;
   gap: 40px;
   color: #fff;
@@ -323,7 +342,8 @@ iframe{
 }
 
 .guest-photo img {
-  width: 280px;   /* 写真サイズ調整 */
+  width: 280px;
+  /* 写真サイズ調整 */
   border-radius: 8px;
 }
 
@@ -334,7 +354,8 @@ iframe{
 .guest-name {
   font-size: 32px;
   margin-bottom: 10px;
-  color: #ffe100;  /* タイトル色（画像のピンクに近い） */
+  color: #ffe100;
+  /* タイトル色（画像のピンクに近い） */
 }
 
 .accent-line {
@@ -350,10 +371,11 @@ iframe{
 }
 
 .apex-links {
-    padding: 0 16px;
-    margin-bottom: 24px;
-    font-size: 34px;
-  }
+  padding: 0 16px;
+  margin-bottom: 24px;
+  font-size: 34px;
+  text-align: center;
+}
 
 
 
@@ -361,31 +383,39 @@ iframe{
 @media (max-width: 768px) {
 
   /* 全体の調整 */
-  html, body {
+  html,
+  body {
     width: 100%;
-    overflow-x: hidden; /* 横スクロール防止 */
+    overflow-x: hidden;
+    /* 横スクロール防止 */
   }
 
   body {
-    padding-top: 60px; /* ナビバーの高さに合わせて調整 */
+    padding-top: 60px;
+    /* ナビバーの高さに合わせて調整 */
   }
 
-  .content, section {
-    padding: 16px; /* 余白を狭くする */
+  .content,
+  section {
+    padding: 16px;
+    /* 余白を狭くする */
   }
 
   /* --- ヘッダー（ナビバー） --- */
   .navbar {
-    padding: 0 15px; /* 左右の余白を詰める */
+    padding: 0 15px;
+    /* 左右の余白を詰める */
     height: 60px;
   }
 
   .nav-left .logo img {
-    height: 40px; /* ロゴを少し小さく */
+    height: 40px;
+    /* ロゴを少し小さく */
   }
 
   .nav-right {
-    gap: 10px; /* アイコン間の隙間を詰める */
+    gap: 10px;
+    /* アイコン間の隙間を詰める */
   }
 
   .icon-circle {
@@ -397,18 +427,23 @@ iframe{
   /* スマホでは75pxなどは大きすぎてはみ出るため調整します */
 
   h1 {
-    font-size: 1.5rem; /* 約24px */
+    font-size: 1.5rem;
+    /* 約24px */
   }
 
   h2 {
-    font-size: 1.25rem; /* 約20px */
+    font-size: 1.25rem;
+    /* 約20px */
   }
 
   /* グラデーション背景のタイトル (.bu) */
   .bu {
-    font-size: 24px;       /* 75px -> 24px */
-    padding: 8px 16px;     /* パディングも縮小 */
-    width: 90%;            /* 画面幅に収まるように */
+    font-size: 24px;
+    /* 75px -> 24px */
+    padding: 8px 16px;
+    /* パディングも縮小 */
+    width: 90%;
+    /* 画面幅に収まるように */
     margin: 24px auto;
     border-radius: 8px;
     line-height: 1.4;
@@ -416,37 +451,45 @@ iframe{
 
   /* メインタイトル (.title) */
   .title {
-    font-size: 32px; /* 64px -> 32px */
+    font-size: 32px;
+    /* 64px -> 32px */
   }
 
   /* 本文 (.honbun, .honbu) */
-  .honbun, .honbu {
-    font-size: 16px; /* 24px/42px -> 16px */
+  .honbun,
+  .honbu {
+    font-size: 16px;
+    /* 24px/42px -> 16px */
     line-height: 1.6;
-    text-align: center; /* スマホは左揃えの方が読みやすい場合が多い（お好みでcenterでも可） */
+    text-align: center;
+    /* スマホは左揃えの方が読みやすい場合が多い（お好みでcenterでも可） */
     padding: 0 10px;
   }
 
   /* 小見出し (.komi) */
   .komi {
-    font-size: 20px; /* 40px -> 20px */
+    font-size: 20px;
+    /* 40px -> 20px */
     margin-top: 24px;
     margin-bottom: 12px;
   }
 
   /* 過去大会 (.kako) */
   .kako {
-    font-size: 20px; /* 48px -> 20px */
-    word-break: break-all; /* 長いURL等の改行 */
+    font-size: 20px;
+    /* 48px -> 20px */
+    word-break: break-all;
+    /* 長いURL等の改行 */
   }
 
-  .menu{
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 
   /* リンク (.rinnku) */
   .rinnku {
-    font-size: 24px; /* 64px -> 24px */
+    font-size: 24px;
+    /* 64px -> 24px */
     width: 100%;
   }
 
@@ -455,7 +498,8 @@ iframe{
     font-size: 1.2rem;
     text-align: left;
     padding-left: 10px;
-    border-left: 5px solid #1a73e8; /* アクセントをつけて見やすく */
+    border-left: 5px solid #1a73e8;
+    /* アクセントをつけて見やすく */
     margin-top: 30px;
   }
 
@@ -467,14 +511,17 @@ iframe{
 
   /* --- YouTube埋め込みのレスポンシブ化 --- */
   iframe {
-    width: 100% !important; /* 強制的に幅を100%に */
+    width: 100% !important;
+    /* 強制的に幅を100%に */
     height: auto !important;
-    aspect-ratio: 16 / 9;   /* アスペクト比を維持 */
+    aspect-ratio: 16 / 9;
+    /* アスペクト比を維持 */
   }
 
   /* --- レイアウト調整 --- */
   .dive {
-    flex-direction: column; /* 縦並びにする */
+    flex-direction: column;
+    /* 縦並びにする */
     align-items: center;
   }
 
@@ -494,30 +541,35 @@ iframe{
     max-width: 100%;
     height: auto;
   }
-  
+
   /* エペ風ロゴのリンク画像周り */
   div[style="text-align: center;"] img {
-    width: 80% !important; /* 50%だと小さすぎるので広げる */
+    width: 80% !important;
+    /* 50%だと小さすぎるので広げる */
   }
 
   /* フッター調整 */
   .footer {
     padding: 20px 0;
   }
-  
+
   .footer img {
-    width: 100px; /* ロゴサイズ調整 */
+    width: 100px;
+    /* ロゴサイズ調整 */
     height: auto;
   }
 
   .guest-card {
-    flex-direction: column;   /* 縦並びにする */
-    text-align: center;        /* 中央寄せ */
+    flex-direction: column;
+    /* 縦並びにする */
+    text-align: center;
+    /* 中央寄せ */
     padding: 20px;
   }
 
   .guest-photo img {
-    width: 60%;               /* 画面に合わせて縮小 */
+    width: 60%;
+    /* 画面に合わせて縮小 */
     max-width: 260px;
   }
 
@@ -526,7 +578,8 @@ iframe{
   }
 
   .accent-line {
-    margin: 10px auto 20px;   /* 中央に配置 */
+    margin: 10px auto 20px;
+    /* 中央に配置 */
     width: 100px;
   }
 
@@ -555,34 +608,53 @@ iframe{
     padding: 15px;
     gap: 20px;
   }
+}
+
+/* ===== 追加：タブレット幅（ナビが詰まる対策） ===== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
   }
 
-  /* ===== 追加：タブレット幅（ナビが詰まる対策） ===== */
-@media (max-width: 1024px) {
-  .navbar { padding: 0 20px; }
-  .nav-right { gap: 15px; }
-  .menu ul { gap: 14px; }
-  .menu a { font-size: 14px; }
+  .nav-right {
+    gap: 15px;
+  }
+
+  .menu ul {
+    gap: 14px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
 }
 
 /* ===== 追加：スマホ対応 ===== */
 @media (max-width: 768px) {
 
-  /* APEX関連リンクを左揃え */
   .apex-links {
+    width: fit-content;
+    /* 中身の幅に合わせる */
+    max-width: 100%;
+    /* 画面幅を超えないように */
+    margin: 0 auto 24px;
+    /* ブロックごと中央に配置 */
     padding: 0 16px;
-    margin-bottom: 24px;
   }
+
   .apex-links p {
     text-align: left;
+    /* 中の文字は左揃えのまま */
     font-size: 14px;
     line-height: 1.6;
     margin: 0 0 14px;
   }
+
   .apex-links a {
-    display: block;            /* ラベルとURLを2行に分ける */
+    display: block;
     color: #1a73e8;
-    overflow-wrap: anywhere;   /* 長いURLを折り返す */
+    overflow-wrap: anywhere;
+
   }
 
   /* 日程(.sright)が48pxのままだったので縮小 */
@@ -609,7 +681,8 @@ iframe{
     font-size: 16px;
     line-height: 1.7;
     padding: 0 16px;
-    overflow-wrap: anywhere;   /* メールアドレスの折り返し */
+    overflow-wrap: anywhere;
+    /* メールアドレスの折り返し */
   }
 
   /* フッター */
@@ -617,7 +690,9 @@ iframe{
     font-size: 12px;
     padding: 0 10px;
   }
+
   .footer figure {
-    margin: 0;                 /* figureの初期余白を消す */
+    margin: 0;
+    /* figureの初期余白を消す */
   }
 }
